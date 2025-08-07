@@ -1,10 +1,13 @@
-# main.py
-from fastapi import FastAPI, Form, HTTPException  # type: ignore
-from fastapi.responses import FileResponse  # type: ignore
+from fastapi import FastAPI, Form, HTTPException
+from fastapi.responses import FileResponse
 from utils import download_video
-import uvicorn  # type: ignore
+import uvicorn
 
-app = FastAPI()
+app = FastAPI( 
+    title="Vidozer API",
+    description="Download videos from YouTube, Instagram, etc.",
+    version="1.0.0"
+)
 
 @app.post("/download")
 async def download(url: str = Form(...), platform: str = Form(...)):
@@ -16,3 +19,5 @@ async def download(url: str = Form(...), platform: str = Form(...)):
 
 if __name__ == "__main__":
     uvicorn.run("main:app", port=8000, reload=True)
+
+

@@ -8,7 +8,10 @@ app = FastAPI(
     description="Download videos from YouTube, Instagram, etc.",
     version="1.0.0"
 )
-
+@app.get("/")
+def read_root():
+    return {"message": "Vidozer API is running. Use /download to POST your URL and platform."}
+    
 @app.post("/download")
 async def download(url: str = Form(...), platform: str = Form(...)):
     try:
@@ -19,5 +22,4 @@ async def download(url: str = Form(...), platform: str = Form(...)):
 
 if __name__ == "__main__":
     uvicorn.run("main:app", port=8000, reload=True)
-
 

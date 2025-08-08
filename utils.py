@@ -21,6 +21,10 @@ async def download_video(url: str, platform: str) -> str:
     output_dir = "downloads"
     os.makedirs(output_dir, exist_ok=True)
 
+    # Check if cookie file exists
+    cookie_path = f"cookies/{platform}.txt"
+    use_cookies = os.path.exists(cookie_path)
+
     ydl_opts = {
         'outtmpl': f'{output_dir}/%(title).80s.%(ext)s',
         'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4',
@@ -28,6 +32,9 @@ async def download_video(url: str, platform: str) -> str:
         'quiet': True,
         'noplaylist': True
     }
+
+    if use_cookies:
+        ydl_opts['cookiefile'] = cookie_path
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         info = ydl.extract_info(url, download=True)

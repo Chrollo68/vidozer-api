@@ -1,0 +1,15 @@
+# Netscape HTTP Cookie File
+.x.com	TRUE	/	TRUE	0	__cf_bm	Lig5b_5wSmNEHxH4TmX9AWdiFDmCS4idHc8tH8avSl8-1754632523-1.0.1.1-WFV8.SmjX1LhIFPT0zmnaqpjhseUzxSapJi6p2UQlSCYKz.ndR0X21qyO9udWmv.BTHLLB.uL2wZcnJFHIyAi6oBfTJs0kduM1vHxiKXgq0
+.x.com	TRUE	/	FALSE	0	__cuid	404c58e0374e4288a276af41ff0a515c
+.x.com	TRUE	/	TRUE	0	auth_token	f517765260c257961c524c364d72c2c2f7bd7779
+.x.com	TRUE	/	TRUE	0	ct0	2d7f34ac6b306c5c40f6cebffbd812fb765eeba0b058f785525bca3d08bed57e5446f40c82948b090b6102c2245f672f18a9f54b1c25aa0d6094b20bab1cc9f70dae07af8a236804a162a667c38d6074
+.x.com	TRUE	/	TRUE	0	d_prefs	MjoxLGNvbnNlbnRfdmVyc2lvbjoyLHRleHRfdmVyc2lvbjoxMDAw
+.x.com	TRUE	/	TRUE	0	gt	1953696519988658452
+.x.com	TRUE	/	TRUE	0	guest_id	v1%3A175463252291948586
+.x.com	TRUE	/	TRUE	0	guest_id_ads	v1%3A175463252291948586
+.x.com	TRUE	/	TRUE	0	guest_id_marketing	v1%3A175463252291948586
+.x.com	TRUE	/	TRUE	0	kdt	z5bn9RodeQHo1uDcC8k8l5dMvuiJXv3vpa9Vze7q
+.x.com	TRUE	/	TRUE	0	personalization_id	"v1_zNDbvj3p52YvI4oFj9geJA=="
+.x.com	TRUE	/	TRUE	0	twid	u%3D1953696580537634816
+x.com	FALSE	/	FALSE	0	g_state	{"i_l":0}
+x.com	FALSE	/	FALSE	0	lang	en
